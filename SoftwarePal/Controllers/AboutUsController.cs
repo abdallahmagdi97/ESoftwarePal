@@ -26,6 +26,8 @@ namespace SoftwarePal.Controllers
         {
             _aboutUsService = aboutUsService;
             _userService = userService;
+
+
         }
 
         [AllowAnonymous]
