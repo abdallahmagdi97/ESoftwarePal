@@ -26,6 +26,7 @@ namespace SoftwarePal.Controllers
         {
             _blogService = blogService;
             _userService = userService;
+
         }
 
         [AllowAnonymous]
