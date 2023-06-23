@@ -42,11 +42,6 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
-      - name: Delete old artifacts
-        run: |
-          echo "Deleting old artifacts..."
-          Remove-Item -Recurse -Force ${{env.DOTNET_ROOT}}/myapp
-
       - name: Download artifact from build job
         uses: actions/download-artifact@v2
         with:
